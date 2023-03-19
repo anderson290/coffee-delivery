@@ -1,5 +1,12 @@
-const Header = () => {
-  return <></>
-}
+import { HeaderContainer } from "./Header.styles";
 
-export default Header
+const Header = () => {
+  return (
+    <HeaderContainer>
+      <img src="" alt="" />
+      <div>Porto Alegre, RS</div>
+    </HeaderContainer>
+  );
+};
+
+export default Header;

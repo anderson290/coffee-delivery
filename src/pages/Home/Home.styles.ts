@@ -25,6 +25,12 @@ export const HomeContainer = styled.div`
   }
 `;
 
+export const CardContainer = styled.div`
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+`;
+
+
 export const Badges = styled.div`
   display: grid;
   gap: 12px;

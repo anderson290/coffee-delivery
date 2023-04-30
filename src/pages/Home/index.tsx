@@ -6,6 +6,7 @@ import {
   PurpleBadge,
   YellowBadge,
   PackageBadge,
+  CardContainer,
 } from "./Home.styles";
 import homeCoffee from "../../assets/images/home-coffee.svg";
 import shoppingCartIcon from "../../assets/images/icons/shopping-cart-fill.svg";
@@ -84,13 +85,11 @@ export const Home = () => {
       </div>
       <div className="coffee__section">
         <h3>Nossos cafés</h3>
-        {coffeeList.map(coffee => {
-          return (
-          <Card key={coffee.id} item={coffee}>
-           
-          </Card>
-            )
-        })}
+        <CardContainer>
+          {coffeeList.map((coffee) => {
+            return <Card key={coffee.id} item={coffee}></Card>;
+          })}
+        </CardContainer>
       </div>
     </HomeContainer>
   );

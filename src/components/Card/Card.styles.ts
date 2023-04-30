@@ -79,6 +79,7 @@ export const CardAmount = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 0.4rem;
+  border-radius: 6px;
   button {
     background-color: transparent;
     border: 0;

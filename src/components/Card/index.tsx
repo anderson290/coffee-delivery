@@ -16,8 +16,6 @@ import plusBoldIcon from "../../assets/images/icons/plus-bold.svg";
 import minusBoldIcon from "../../assets/images/icons/minus-bold.svg";
 
 
-
-
 import { useState } from "react";
 import { useCart } from "../../hooks/CartContext";
 

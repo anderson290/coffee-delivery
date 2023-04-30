@@ -15,13 +15,55 @@ export const CartContainer = styled.div`
 export const CartAddress = styled.div`
   width: 100%;
   background: ${(props) => props.theme["base-card"]};
+  padding: 40px;
+  margin-bottom: 12px;
+  .details {
+    display: flex;
+    justify-content: flex-start;
+    gap: 8px;
+    h4 {
+      color: ${(props) => props.theme["base-subtitle"]};
+      font-size: 16px;
+      font-weight: 400;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 14px;
+    }
+  }
+
+  .group {
+    display: flex;
+    gap: 12px;
+  }
+
+  .payment {
+    display: flex;
+    gap: 12px;
+  }
+`;
+
+export const CartPaymentButton = styled.button`
+  display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background: ${(props) => props.theme["base-button"]};
+  padding: 16px 20px;
+  text-transform: uppercase;
+  border: 0;
+
+  border-radius: 6px;
+  margin-top: 32px;
 `;
 
 export const CartItems = styled.div`
   background: ${(props) => props.theme["base-card"]};
   width: 100%;
   border-radius: 6px 36px;
-  padding: 48px 44px;
+  padding: 48px 32px;
 `;
 
 export const CartItem = styled.div`
@@ -46,8 +88,6 @@ export const CartItemPrice = styled.p`
   font-weight: 700;
 `;
 
-
-
 export const CardAmountContainer = styled.div`
   display: flex;
   justify-content: flex-start;
@@ -55,6 +95,32 @@ export const CardAmountContainer = styled.div`
   cursor: pointer;
 `;
 
+export const CartInput = styled.input`
+  padding: 12px;
+  font-weight: 400;
+  font-size: 14px;
+  background: ${(props) => props.theme["base-input"]};
+  border-radius: 4px;
+  border: 1px solid  ${(props) => props.theme["base-button"]};
+  margin-top: 16px;
+  width: ${({ width }) => width || '100%'};
+
+`;
+
+export const CartDeleteButton = styled.button`
+  background: ${(props) => props.theme["base-button"]};
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  padding: 0.4rem;
+  gap: 2px;
+  color: ${(props) => props.theme["base-text"]};
+  border-radius: 6px;
+`;
 
 export const CartSubTotal = styled.div`
   font-size: 16px;

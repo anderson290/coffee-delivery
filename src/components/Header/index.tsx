@@ -19,7 +19,7 @@ const Header = () => {
   };
   return (
     <HeaderContainer>
-      <img src={brandLogo} alt="logo" onClick={goToHome} />
+      <img style={{cursor: 'pointer'}} src={brandLogo} alt="logo" onClick={goToHome} />
       <div className="location_container">
         <div className="location">
           <StyledSVG

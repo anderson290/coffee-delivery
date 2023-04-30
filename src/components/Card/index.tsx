@@ -1,3 +1,4 @@
+import { StyledSVG } from "../../styles/themes/default";
 import {
   CardBody,
   CardContainer,
@@ -5,11 +6,18 @@ import {
   CardImage,
   CardTitle,
 } from "./Card.styles";
-import image from "../../assets/images/coffee/Expresso.svg";
 export const Card = ({ item }: any) => {
   return (
     <CardContainer>
-      <CardImage src={image} alt="" />
+      <CardImage>
+        <StyledSVG
+          color={"base-text"}
+          width={"120px"}
+          height={"120px"}
+          src={item.localImage}
+        />
+      </CardImage>
+
       <CardBody>
         <CardTitle>{item?.name}</CardTitle>
         <CardDescription>{item?.description}</CardDescription>

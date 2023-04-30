@@ -16,3 +16,18 @@ export const defaultTheme = {
   'purple-dark': '#4B2995',
   'purple-light': '#EBE5F9',
 } as const;
+
+import SVG from "react-inlinesvg";
+import styled from "styled-components";
+
+interface SVGProps {
+  color: string;
+}
+
+export const StyledSVG = styled(SVG)<SVGProps>`
+  width: ${({ width }) => width || '24px'};
+  height: ${({ height }) => height || '24px'};
+  & path {
+    fill: ${({ color }) => color};
+  }
+`;

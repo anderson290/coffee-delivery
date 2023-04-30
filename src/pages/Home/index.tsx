@@ -87,7 +87,11 @@ export const Home = () => {
         <h3>Nossos cafés</h3>
         <CardContainer>
           {coffeeList.map((coffee) => {
-            return <Card key={coffee.id} item={coffee}></Card>;
+            return (
+              <div key={coffee.name}>
+                <Card item={coffee}></Card>
+              </div>
+            );
           })}
         </CardContainer>
       </div>

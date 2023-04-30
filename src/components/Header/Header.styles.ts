@@ -31,15 +31,35 @@ export const HeaderContainer = styled.div`
       width: 38px;
       height: 38px;
       border-radius: 5px;
-      background: ${(props) => props.theme["yellow-light"]};
-      display: flex;
+      background: rgb(241, 233, 201);
+      -webkit-box-pack: center;
       justify-content: center;
+      -webkit-box-align: center;
       align-items: center;
       cursor: pointer;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 10px;
       img {
         width: 19px;
         color: ${(props) => props.theme["yellow-dark"]};
       }
     }
   }
+`;
+
+export const CardCartAmount = styled.span`
+  position: relative;
+  top: -42px;
+  left: 22px;
+  font-size: 10px;
+  background: ${(props) => props.theme["yellow-dark"]};
+  color: ${(props) => props.theme["white"]};
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
 `;

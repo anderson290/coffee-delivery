@@ -22,6 +22,7 @@ import styled from "styled-components";
 
 interface SVGProps {
   color: string;
+  src: any;
 }
 
 export const StyledSVG = styled(SVG)<SVGProps>`

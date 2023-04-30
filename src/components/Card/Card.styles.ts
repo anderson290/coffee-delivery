@@ -93,7 +93,7 @@ export const CardCartButton = styled.button`
   width: 38px;
   height: 38px;
   border-radius: 5px;
-  background: ${(props) => props.theme["purple-light"]};
+  background: ${(props) => props.theme["purple-dark"]};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,6 +102,7 @@ export const CardCartButton = styled.button`
   border: 0;
   img {
     width: 19px;
-    color: ${(props) => props.theme["purple-dark"]};
+    color: ${(props) => props.theme["purple"]};
   }
 `;
+
